@@ -1,5 +1,5 @@
 #!/bin/bash
-SSHPASS=redhat
+export SSHPASS=redhat
 USER=vagrant
 FILES=files/*
 for f in $FILES
