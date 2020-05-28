@@ -6,5 +6,6 @@ for f in $FILES
 do
   echo "Processing $f file..."
   # take action on each file. $f store current file name
+  du -h $f
   time sshpass -p $PASSWORD scp $f $USER@192.168.33.11:/tmp
 done
